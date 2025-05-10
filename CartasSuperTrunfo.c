@@ -6,39 +6,41 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
-    char Estado[20]
-    int codigo;
-    char NomedaCidade[20];
-    int populacao;
-    float area;
-    float PIB;
-    int pontosturisticos;
+int main(){
+   
+    char Estado[20];
+    char Cidade[20];
+    int codigo, populacao , pontosturisticos;
+    float PIB, area;
 
     printf("Digite o Estado:\n");
     scanf("%s", &Estado);
-    
-    printf("Digite o Código da Cidade:\n");
+
+    printf("Digite a Cidade:\n");
+    scanf("%s", &Cidade);
+
+    printf("Digite o Codigo da Cidade:\n");
     scanf("%d", &codigo);
 
-    printf("Digite o Nome da Cidade:\n");
-    scanf("%s", &NomedaCidade);
-
     printf("Digite a População:\n");
-    scanf("%d", &populacao);
+    scanf("%d",&populacao);
 
-    printf("Digite a Área:\n");
-    scanf("%f",&area);
+    printf("Digite os Pontos turísticos:\n");
+    scanf("%d",&pontosturisticos);
 
     printf("Digite o PIB:\n");
     scanf("%f", &PIB);
 
-    printf("Digite os Pontos Turísticos:\n");
-    scanf("%d", &pontosturisticos);
+    printf("Digite a Área:");
+    scanf("%f", &area);
 
-    printnf("Nome do Estado: %s - Codigo: %d\n", Estado, codigo);
-    printf("Nome da Cidade: %s - População: %d\n", NomedaCidade, populacao);
-    printf("Área: %f - PIB: %f - PontosTuristicos: %d\n", area, PIB, pontos turísticos);   
+    printf("Estado: %s - Cidade: %s - Código da Cidade: %d\n", Estado, Cidade, codigo);
+    printf("População: %d - Pontos Turísticos: %d\n", populacao, pontosturisticos);
+    printf("PIB: %f - Área: %f\n" ,PIB, area);
+
+    return 0;
+}
+  
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -51,5 +53,3 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
-}
